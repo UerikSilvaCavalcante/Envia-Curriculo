@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="content">
+            <div class="title">
+                <h1>Envia Curriculo</h1>
+            </div>
+            <div class="formulario">
+                <form action="/envia" id="envia" method="post">
+                    <div class="inp">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="iemail" required placeholder="Digite o Email que deseja enviar">
+                    </div>
+                    <div class="inp">
+                        <label for="assunto" id="a">Assunto:</label>
+                        <input type="text" name="assunto" id="iassunto" required placeholder="Digite o Assunto do email">
+                    </div>
+                    <div class="inp">
+                        <label for="Vaga">Vaga:</label>
+                        <input type="text" name="Vaga" id="iVaga" required placeholder="Digite a Vaga">
+                    </div>
+                    <button type="submit" id="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+        {% set msg = get_flashed_messages() %}
+        {% if msg %}
+            <div class="mensgem", id="flash-message">
+                <p>{{msg[0]}}</p>
+            </div>
+        {% endif %}
+    </div>
+    <script>
+        // Desaparecer a mensagem após 5 segundos (5000 milissegundos)
+        setTimeout(function() {
+            var flashMessage = document.getElementById('flash-message');
+            if (flashMessage) {
+                flashMessage.style.display = 'none';
+            }
+        }, 5000);
+    </script>
+</body>
+</html>

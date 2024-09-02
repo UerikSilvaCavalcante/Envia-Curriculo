@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: azure;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title{
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.formulario{
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: center;
+    gap: 10px;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.inp > input {
+    width: 200px;
+    background-color: rgba(207, 164, 247, 0.959);
+    border: none;
+    padding: 5px;
+    
+}
+
+input:focus{
+    background-color: whitesmoke;
+}
+
+#btn{
+    background-color: blueviolet;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    width: 50%;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 30px;
+    transition: background .3s ease-in, color .3s ease-in, transform .3s ease-in-out ;
+}
+
+#btn:hover{
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: blueviolet;
+    transform: scale(1.3);
+}
+
+#btn:active{
+    transition: all .01s;
+    transform: scale(1.1);
+}
+
+.mensgem{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100vw;
+    height: 100vh;
+    color: blueviolet;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.mensgem > p{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
