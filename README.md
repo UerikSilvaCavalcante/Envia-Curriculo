@@ -1,10 +1,5 @@
 # Envia-Curriculo
 
-Claro! Aqui está a descrição do seu projeto Curriculum Vitae Sender traduzida para o português:
-
-
-Claro! Aqui está a descrição do seu projeto Envio de Currículos traduzida para o inglês:
-
 📧 Resume Submission
 Python | Flask | smtplib
 
